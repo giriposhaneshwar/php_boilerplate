@@ -1,0 +1,20 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11 Feb, 2023, 5:43:49 PM
+    Author     : GIRIY
+*/
+
+.mainContainer{
+}
+.navContainer {
+    display: block;
+    border: 1px solid #c00;
+}
+.footerSection{
+    display: block;
+    border: 1px solid #c00;
+    min-height: 60px;
+}

@@ -1,4 +1,4 @@
-<div>Products Page</div>
+<div>Product Page</div>
 <div>
     <?php
         if(!empty($params)) {

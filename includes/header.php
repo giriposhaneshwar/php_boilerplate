@@ -10,6 +10,7 @@
             integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
         crossorigin="anonymous"></script>
         <link href="./assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="./assets/css/styles.css" rel="stylesheet" type="text/css" />
         <script src="./assets/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
     </head>
     <body>
@@ -18,18 +19,18 @@
 
                 <div class="col">
                     <div>Logo</div>
-                    <div>
+                    <div class="navContainer">
                         <?php
                         foreach ($nav as $key => $value) {
-                            echo '<div><a href="./' . $value["link"] . '">' . $value["label"] . '</a></div>';
+                            echo '<div class="navItem"><a href="' . $baseUrl . $value["link"] . '">' . $value["label"] . '</a></div>';
                         }
                         ?>
                     </div>
                 </div>
                 <div class="col">
                     <?php
-                    if ($isHome) {
-                        echo slider(array(0, 1, 2));
+                    if ($params["page"] == "home") {
+                        echo slider(array(0, 1, 2, 4, 5, 6));
                     }
                     ?>
                 </div>
