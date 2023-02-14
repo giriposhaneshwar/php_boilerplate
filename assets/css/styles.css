@@ -1,0 +1,44 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11 Feb, 2023, 5:43:49 PM
+    Author     : GIRIY
+*/
+.noPad {
+    padding: 0px;
+}
+.mainContainer{
+}
+.section {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+}
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+}
+.navContainer {
+    display: flex;
+}
+.navContainer .navItem{
+    display: block;
+}
+.navContainer .navItem > a{
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #000;
+}
+.navContainer .navItem > a.active{
+    color: var(--brand-red);
+    /*color: var(--white);*/
+    font-weight: bold;
+}
+.footerSection{
+    display: block;
+    border: 1px solid #c00;
+    min-height: 60px;
+}
