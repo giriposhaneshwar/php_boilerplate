@@ -19,6 +19,43 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .headerSection {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.productSection {
+    display: flex;
+    justify-content: center;
+    background-color: var(--brand-light-green);
+    border-bottom: 1px solid var(--black);
+    border-top: 1px solid var(--black);
+}
+.productSection > .product_navItem {
+    display: block;
+}
+.productSection > .product_navItem > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--black);
+}
+.productSection > .product_navItem > a>span,
+.productSection > .product_navItem > a>b {
+    display: flex;
+    font-weight: normal;
+}
+.productSection > .product_navItem > a>span{
+    display: flex;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+    border: 1px solid var(--brand-green);
+}
+.productSection > .product_navItem > a>span>img{
+    width: 32px;
+}
+.productSection > .product_navItem > a>span.hide{
+    display: none;
 }
 .navContainer {
     display: flex;
@@ -37,8 +74,69 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     /*color: var(--white);*/
     font-weight: bold;
 }
+
+.navFooter{
+    display: block;
+}
+.navFooter>b{
+    display: block;
+    padding-bottom: 15px;
+    color: var(--brand-green);
+}
+
+.navFooter .navItem{
+    display: block;
+}
+.navFooter .navItem > a{
+    display: block;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: #000;
+}
+.navFooter .navItem > a.active{
+    color: var(--brand-red);
+    /*color: var(--white);*/
+    font-weight: bold;
+}
+
+/*    Slider Styles */
+.sliderContainer {
+    display: block;
+}
+.sliderItem>img {
+    display: block;
+    height: 450px;
+    object-fit: cover;
+}
+
 .footerSection{
     display: block;
-    border: 1px solid #c00;
-    min-height: 60px;
+    min-height: 250px;
+    background-color: var(--light-grey);
+    padding: 15px 0px;
+}
+
+.footerCopyRight {
+    display: block;
+    background-color: var(--brand-green);
+    color: var(--white);
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.footerBrandHeading {
+    padding: 15px;
+    padding-left: 0px;
+}
+.brandRefLogoSymbols{
+    display: flex;
+}
+.brandRefLogoSymbols > div{
+    display: block;
+    padding: 25px;
+}
+.brandRefLogoSymbols img {
+    width: 100%;
+    max-width: 150px;
 }

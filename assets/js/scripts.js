@@ -3,34 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Other/javascript.js to edit this template
  */
 
-let slideTimer = null;
-let sliderAnimation = () => {
-    let sliderContainer = $(".sliderContainer");
-    let sliderItems = sliderContainer.find('.sliderItem');
-    let activeSlide = 0;
-    let timer = 2000;
-    const doSlide = () => {
-        if (sliderItems.length > 0) {
-            sliderItems.removeClass('active');
-            $(sliderItems[activeSlide]).addClass('active');
-        }
-        ;
-    };
-    doSlide();
-    slideTimer = setInterval(() => {
-        if (activeSlide < (sliderItems.length - 1)) {
-            activeSlide++;
-        } else {
-            activeSlide = 0;
-        }
-        doSlide();
-
-    }, timer);
-};
-
 $(document).ready(() => {
-    if (slideTimer !== null)
-        clearInterval(slideTimer);
-
-    sliderAnimation();
+    $('.sliderContainer').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false
+    });
 });
+
